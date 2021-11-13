@@ -1,0 +1,51 @@
+*{
+    background-color: cornsilk;
+}
+h2{
+    color: yellow;
+    background-color: tomato;
+}
+
+.para{
+    color: rgb(18, 118, 233);
+    font-size: 20px;
+}
+#paragraph{
+    color:black;
+}
+a:link{
+    color: lawngreen;
+}
+
+a:active{
+    color: red;
+}
+
+a:visited{
+    color: purple;
+}
+a:hover{
+    background-color: salmon;
+    font-size: 30px;
+}
+/* hover lam dc cho nhieu the */
+h3::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+h3::first-line{
+    background-color: sandybrown;
+}
+
+h3:first-child{
+    color: blue;
+}
+.division::before{
+    content:'Insert before';
+    color: chartreuse;
+}
+.division::after{
+    content:'Insert after';
+    color: cornflowerblue;
+}

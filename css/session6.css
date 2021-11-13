@@ -1,0 +1,74 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    /* oblique và italic đều in nghiêng*/
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline overline  #000 double ;
+    /* wavy răng cưa, solid nét liền */
+    text-align: center;
+    text-transform:uppercase;
+    /* capitalize viết chữ cái đầu của các từ in hoa 
+        lowercase viết thường
+        uppercase viết hết bằng in hoa
+        inherit sẽ thừa kế thuộc tính của phần tử cha gần nhất
+        initial sử dụng style mặc định của trình duyệt
+        unset trình duyệt sẽ sử dụng một trong hai thuộc tính inherit hoặc initial tùy thuộc vào thuộc tính của phần tử cha*/
+    word-spacing: 20px;
+}
+span{
+    color: violet;
+    font-style: italic;
+}
+.indent{
+    text-indent: 20px;
+    /* thụt đầu dòng */
+}
+.padding1{
+    border: solid;
+    padding: 30px;
+}
+.padding2{
+    border: solid;
+    padding: 30px 60px;
+}
+.padding3{
+    border: solid;
+    padding: 30px 60px 90px;
+}
+.padding4{
+    border: solid;
+    padding: 30px 60px 90px 120px;
+}
+.mar1{
+    border: solid;
+    margin: 30px;
+}
+.mix{
+    border: solid;
+    padding-left: 40px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.border1{
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: dotted;
+    border-top-style: groove;
+}
+.border2{
+    border-style: solid;
+    border-color: green;
+}
+.border3{
+    border-style: solid;
+    border-top-width: medium;
+    border-right-width: thin;
+    border-bottom-width: 20px;
+    border-left-width: thick;
+}
+.border4{
+    border: medium solid red;
+}
+/* độ thanh của nét tăng dần từ thin -> medium -> thick */
