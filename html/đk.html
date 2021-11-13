@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="baithimau.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input:required:invalid{
+            border: red solid;
+        }
+        input{
+            color: blue;
+        }
+        #tb2{
+            border:  solid black;
+            /* border-spacing: 0; */
+            margin: 90px auto 90px auto;
+            /* margin-left: 350px; */
+            /* width: 800px; */
+            /* height: 400px; */
+            
+        }
+        
+        .c1{
+            width:200px;
+            /* text-align: left; */
+        }
+        td{
+            text-align: left;
+        }
+        input[type=submit], input[type=reset]{
+            cursor: pointer;
+            width: 100px;
+            height: 30px;
+            color: black;
+            border: double;
+            background-color: #ccc;
+            border-radius: 25px;
+            
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto; 
+            margin-right: auto;
+            /* width: 100%; */
+            /* height: auto; */
+            
+        }
+        
+        #img-header{
+            width: 1000px;
+            height: 139px;
+            background-image: url("Images-Set06/header.jpg");
+            background-repeat: no-repeat;
+            background-size: 1000px ;
+
+        }
+        #nav ul li a{
+    
+            text-decoration: none;
+            margin: 0 65px;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        #nav ul li{
+            display: inline-block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <!-- <table>
+            <div > -->
+                <table>
+                    <tr id="h1">
+                        <td colspan="2" id="img-header">
+                            <div id="header">
+                                <!-- <img src="Images-Set06/header.jpg" alt="" style="width: 1000px;"> -->
+                                <div id="nav">
+                                    <ul>
+                                        <li><a href="baithimau.html">Home</a></li>
+                                        <li><a href="">Products</a></li>
+                                        <li><a href="">Shops</a></li>
+                                        <li><a href="">Register</a></li>
+                                        <li><a href="đk.html">Signin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <table>
+                                <div>
+                                    <form action="" onsubmit="return showInfo() ">
+                                        <table id="tb2">
+                                            <tr style="background-color:rgb(8, 154, 8); height: 50px;">
+                                                <td colspan="2" style="font-size: 25px; color: #fff; text-align: center;">Member Information</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Full name</td>
+                                                <td><input type="text" required size="80px" id="username"></td>
+                                        
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Gender</td>
+                                                <td><input type="radio" name="gender" value="Male">Male
+                                                    <input type="radio" name="gender" value="Female">Female
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Hobbies</td>
+                                                <td>
+                                                    <input type="checkbox" name="hob" value="Shopping">Shopping
+                                                    <input type="checkbox" name="hob" value="Eating out">Eating out
+                                                    <input type="checkbox" name="hob" value="Sporting">Sporting
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Date of Birth</td>
+                                                <td><input type="date" size="20px" class="birthday"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Address</td>
+                                                <td><input type="text" required size="80px" id="address"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Email</td>
+                                                <td><input type="email" required size="80px" pattern="[a-z0-9]{4}@[a-z]{3}\.[a-z]{2,3}" id="email"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Phone Number</td>
+                                                <td><input type="text" required size="80px" pattern="\d+" id="phone" title="Độ tuổi thành viên phải từ 17 tuổi trở lên "></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">City</td>
+                                                <td>
+                                                <!-- <td> <input type="text" list="mylist" size="15px" id="city">
+                                                    <datalist name="mylist">
+                                                        <option value="Saigon">Saigon</option>
+                                                        <option value="Hue">Hue</option>
+                                                        <option value="Hanoi">Hanoi</option>
+                                                        <option value="Danang">Danang</option>
+                                                    </datalist> -->
+                                                    <select name="" id="city" >
+                                                        <option value="Saigon">Saigon</option>
+                                                        <option value="Hue">Hue</option>
+                                                        <option value="Hanoi">Hanoi</option>
+                                                        <option value="Danang">Danang</option>
+                        
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c1">Comment</td>
+                                                <td><textarea rows="8" cols="75" name="comment" style="color: blue;">
+                                                    </textarea>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td style="text-align: center;" colspan="2"><input type="submit" value="Submit"> <input type="reset" value="Reset"></td>
+                                            </tr>
+                                        </table>
+                                        
+                                        <script src="">
+                        
+                                        </script>
+                                    </form>
+                                </div>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            <!-- </div>
+        </table> -->
+    </form>
+</body>
+</html>
