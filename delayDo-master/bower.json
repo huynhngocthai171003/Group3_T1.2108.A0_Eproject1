@@ -1,0 +1,20 @@
+{
+  "name": "delay-do",
+  "version": "1.3.0",
+  "homepage": "https://github.com/onopko/delayDo.git",
+  "authors": [
+    "Takehiko Ono <me@onotakehiko.com>"
+  ],
+  "description": "delayDo enables creating a specific timer which contains some functions as a queue and can resume it later.",
+  "main": "src/delayDo.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin",
+    "delay-do"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "setAnimationFrameTimeout": "^2.0.0"
+  }
+}
